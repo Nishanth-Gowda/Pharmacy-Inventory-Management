@@ -17,11 +17,10 @@ public class DynamoDBConfig {
 
     @Bean
     AmazonDynamoDB getAmazonDynamoDB(){
-        final AmazonDynamoDB amazonDynamoDB = AmazonDynamoDBClientBuilder.standard()
+        return AmazonDynamoDBClientBuilder.standard()
                 .withCredentials(awsCredentialsProvider)
                 .withRegion(Regions.US_EAST_1)
                 .build();
-        return amazonDynamoDB;
     }
 
     @Bean

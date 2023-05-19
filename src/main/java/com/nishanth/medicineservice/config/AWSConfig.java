@@ -1,6 +1,5 @@
 package com.nishanth.medicineservice.config;
 
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 import org.springframework.context.annotation.Bean;
